@@ -1,18 +1,9 @@
 {
-  "name": "h5ai-vercel",
+  "name": "h5ai",
   "version": "0.30.0",
   "scripts": {
-    "lint": "eslint .",
-    "test": "node test",
     "build": "node ghu release",
-    "vercel-build": "npm run build && mkdir -p _h5ai && cp -R public/* _h5ai/",
+    "vercel-build": "npm run build && mkdir -p public && cp -R build/_h5ai/public/* public/",
     "precommit": "npm run -s lint && npm run -s test"
-  },
-  "devDependencies": {
-    "@babel/core": "7.12.10",
-    "@babel/preset-env": "7.12.11",
-    "eslint": "7.18.0",
-    "ghu": "0.26.0",
-    "jsdom": "16.4.0"
   }
 }
