@@ -5,6 +5,9 @@
   "homepage": "https://larsjung.de/h5ai/",
   "author": "Lars Jung <lrsjng@gmail.com> (https://larsjung.de)",
   "license": "MIT",
+  "engines": {
+    "node": "16.x"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/lrsjng/h5ai.git"
@@ -12,7 +15,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "node test",
-    "build": "node ghu release",  // Removed --out-dir option
+    "build": "node ghu release", 
     "precommit": "npm run -s lint && npm run -s test"
   },
   "devDependencies": {
