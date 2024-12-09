@@ -3,22 +3,16 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
+      "use": "@vercel/static",
       "config": { 
-        "distDir": "_h5ai"
+        "distDir": "build/_h5ai"
       }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/_h5ai/index.html"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/_h5ai/index.html"
+      "dest": "/public/index.html"
     }
   ]
 }
