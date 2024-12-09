@@ -12,7 +12,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "node test",
-    "build": "node ghu release --out-dir public",
+    "build": "node ghu release",  // Removed --out-dir option
     "precommit": "npm run -s lint && npm run -s test"
   },
   "devDependencies": {
